@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="description" content="Move with purpose. Shop performance sportswear, footwear and essentials at FORM Athletics.">
+    <title>FORM Athletics — Move with purpose</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <div class="announcement">Complimentary delivery on orders over $100 <span aria-hidden="true">→</span></div>
+
+    <header class="site-header">
+        <a class="wordmark" href="#home" aria-label="FORM Athletics home">FORM<span>.</span></a>
+
+        <button class="menu-toggle icon-button" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-navigation">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+
+        <nav class="primary-navigation" id="primary-navigation" aria-label="Main navigation">
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#products" class="nav-link" data-filter="men">Men</a>
+            <a href="#products" class="nav-link" data-filter="women">Women</a>
+            <a href="#products" class="nav-link" data-filter="kids">Kids</a>
+            <a href="#products" class="nav-link" data-filter="new">New arrivals</a>
+        </nav>
+
+        <div class="header-actions">
+            <label class="search-box">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 4.5 4.5"/></svg>
+                <input type="search" id="product-search" placeholder="Search" aria-label="Search products">
+            </label>
+            <a class="icon-button account-link" href="#account" aria-label="Your account">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.5"/><path d="M5 20c.7-3.3 3.2-5 7-5s6.3 1.7 7 5"/></svg>
+            </a>
+            <button class="icon-button cart-trigger" type="button" aria-label="Open shopping bag">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l1 12H4L5 8Z"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/></svg>
+                <span class="cart-count" aria-live="polite">0</span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="home" aria-labelledby="hero-title">
+            <img class="hero-image" src="https://images.unsplash.com/photo-1538805060514-97d9cc17730c?auto=format&fit=crop&w=2200&q=85" alt="">
+            <div class="hero-shade"></div>
+            <div class="hero-content">
+                <p class="eyebrow hero-eyebrow">Built for every version of you</p>
+                <h1 id="hero-title">Go beyond<br>your <span>limits.</span></h1>
+                <p class="hero-copy">Performance gear made to keep up with your next move.</p>
+                <a class="button button-light" href="#products">Shop the collection <span aria-hidden="true">↗</span></a>
+            </div>
+            <div class="hero-note"><span>01</span> / TRAINING, REDEFINED</div>
+            <a class="scroll-cue" href="#collections" aria-label="Scroll to explore"><span></span> Scroll to explore</a>
+        </section>
+
+        <section class="category-section section-wrap" id="collections" aria-label="Shop by category">
+            <a class="category-card category-men" href="#products" data-filter="men">
+                <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1000&q=80" alt="Athlete training in a modern gym" loading="lazy">
+                <span class="category-overlay"></span>
+                <span class="category-label"><span>01 / COLLECTION</span><strong>Men</strong><span class="category-arrow">↗</span></span>
+            </a>
+            <a class="category-card category-women" href="#products" data-filter="women">
+                <img src="https://images.unsplash.com/photo-1518310383802-640c2de311b2?auto=format&fit=crop&w=1000&q=80" alt="Woman stretching before a workout" loading="lazy">
+                <span class="category-overlay"></span>
+                <span class="category-label"><span>02 / COLLECTION</span><strong>Women</strong><span class="category-arrow">↗</span></span>
+            </a>
+            <a class="category-card category-kids" href="#products" data-filter="kids">
+                <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=1000&q=80" alt="Athlete ready for their next workout" loading="lazy">
+                <span class="category-overlay"></span>
+                <span class="category-label"><span>03 / COLLECTION</span><strong>Kids</strong><span class="category-arrow">↗</span></span>
+            </a>
+        </section>
+
+        <section class="product-section section-wrap" id="products">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">The latest from FORM</p>
+                    <h2>Made to move.</h2>
+                </div>
+                <div class="product-controls">
+                    <div class="filter-tabs" role="group" aria-label="Filter products">
+                        <button class="filter-button is-active" type="button" data-filter="all">All</button>
+                        <button class="filter-button" type="button" data-filter="men">Men</button>
+                        <button class="filter-button" type="button" data-filter="women">Women</button>
+                        <button class="filter-button" type="button" data-filter="kids">Kids</button>
+                        <button class="filter-button" type="button" data-filter="new">New</button>
+                    </div>
+                    <a class="text-link" href="#products" data-filter="all">View all <span aria-hidden="true">↗</span></a>
+                </div>
+            </div>
+
+            <div class="product-grid" id="product-grid">
+                <article class="product-card" data-category="men new" data-name="Aero Knit Runner">
+                    <div class="product-image-wrap">
+                        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=900&q=85" alt="Red performance running shoe" loading="lazy">
+                        <span class="product-tag">New arrival</span>
+                        <button class="quick-add" type="button" data-add="Aero Knit Runner" data-price="120" aria-label="Add Aero Knit Runner to bag">+</button>
+                    </div>
+                    <div class="product-info"><div><h3>Aero Knit Runner</h3><p>Men's running shoe</p></div><strong>$120</strong></div>
+                </article>
+                <article class="product-card" data-category="women" data-name="Core Motion Legging">
+                    <div class="product-image-wrap">
+                        <img src="https://images.unsplash.com/photo-1506629905607-d9c297d6a199?auto=format&fit=crop&w=900&q=85" alt="Black athletic leggings" loading="lazy">
+                        <button class="quick-add" type="button" data-add="Core Motion Legging" data-price="68" aria-label="Add Core Motion Legging to bag">+</button>
+                    </div>
+                    <div class="product-info"><div><h3>Core Motion Legging</h3><p>Women's training</p></div><strong>$68</strong></div>
+                </article>
+                <article class="product-card" data-category="men new" data-name="Pace Training Tee">
+                    <div class="product-image-wrap">
+                        <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=900&q=85" alt="Minimal white performance t-shirt" loading="lazy">
+                        <span class="product-tag">New arrival</span>
+                        <button class="quick-add" type="button" data-add="Pace Training Tee" data-price="42" aria-label="Add Pace Training Tee to bag">+</button>
+                    </div>
+                    <div class="product-info"><div><h3>Pace Training Tee</h3><p>Unisex · Lightweight</p></div><strong>$42</strong></div>
+                </article>
+                <article class="product-card" data-category="women new" data-name="Studio Flex Bra">
+                    <div class="product-image-wrap">
+                        <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=900&q=85" alt="Woman in performance workout clothing" loading="lazy">
+                        <span class="product-tag">New arrival</span>
+                        <button class="quick-add" type="button" data-add="Studio Flex Bra" data-price="54" aria-label="Add Studio Flex Bra to bag">+</button>
+                    </div>
+                    <div class="product-info"><div><h3>Studio Flex Bra</h3><p>Women's studio</p></div><strong>$54</strong></div>
+                </article>
+                <article class="product-card" data-category="kids" data-name="Sprint Mini Trainer">
+                    <div class="product-image-wrap">
+                        <img src="https://images.unsplash.com/photo-1515955656352-a1fa3ffcd111?auto=format&fit=crop&w=900&q=85" alt="Black and white athletic sneaker" loading="lazy">
+                        <button class="quick-add" type="button" data-add="Sprint Mini Trainer" data-price="58" aria-label="Add Sprint Mini Trainer to bag">+</button>
+                    </div>
+                    <div class="product-info"><div><h3>Sprint Mini Trainer</h3><p>Kids' everyday sneaker</p></div><strong>$58</strong></div>
+                </article>
+                <article class="product-card" data-category="men women" data-name="Everyday Sport Pack">
+                    <div class="product-image-wrap">
+                        <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=900&q=85" alt="Black everyday sports backpack" loading="lazy">
+                        <button class="quick-add" type="button" data-add="Everyday Sport Pack" data-price="76" aria-label="Add Everyday Sport Pack to bag">+</button>
+                    </div>
+                    <div class="product-info"><div><h3>Everyday Sport Pack</h3><p>Training accessories</p></div><strong>$76</strong></div>
+                </article>
+            </div>
+            <p class="empty-state" hidden>No products match your search. Try another name or category.</p>
+        </section>
+
+        <section class="statement">
+            <p class="eyebrow">Find your form</p>
+            <h2>Progress isn't a finish line.<br><span>It's a way forward.</span></h2>
+            <a class="button button-dark" href="#products">Find your next move <span aria-hidden="true">↗</span></a>
+        </section>
+    </main>
+
+    <footer class="site-footer" id="footer">
+        <div class="footer-top">
+            <div class="footer-brand"><a class="wordmark" href="#home">FORM<span>.</span></a><p>Move with purpose. Every day.</p></div>
+            <div class="footer-column"><h2>Explore</h2><a href="#products">New arrivals</a><a href="#products" data-filter="men">Men</a><a href="#products" data-filter="women">Women</a><a href="#products" data-filter="kids">Kids</a></div>
+            <div class="footer-column"><h2>Need help?</h2><a href="mailto:hello@formathletics.example">Contact us</a><a href="#footer">Shipping & returns</a><a href="#footer">FAQs</a></div>
+            <div class="footer-social"><h2>Stay in motion</h2><p>Follow the journey.</p><div class="social-links"><a href="https://instagram.com" aria-label="Instagram">IG</a><a href="https://tiktok.com" aria-label="TikTok">TK</a><a href="https://youtube.com" aria-label="YouTube">YT</a></div></div>
+        </div>
+        <div class="footer-bottom"><span>© 2025 FORM Athletics. All rights reserved.</span><span>Designed for your next move.</span></div>
+    </footer>
+
+    <div class="drawer-backdrop" hidden></div>
+    <aside class="cart-drawer" aria-label="Shopping bag" aria-hidden="true">
+        <div class="drawer-heading"><div><p class="eyebrow">Your selection</p><h2>Your bag <span class="drawer-count">(0)</span></h2></div><button class="icon-button drawer-close" type="button" aria-label="Close shopping bag">×</button></div>
+        <div class="cart-items"><p class="cart-empty">Your bag is ready for something good.</p></div>
+        <div class="cart-summary"><div><span>Subtotal</span><strong class="cart-subtotal">$0</strong></div><p>Shipping and taxes calculated at checkout.</p><button class="button button-dark checkout-button" type="button">Continue to checkout <span aria-hidden="true">↗</span></button></div>
+    </aside>
+    <div class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
